@@ -3,9 +3,9 @@
 Proyecto en React native creado como prueba técnica para la empresa Almundo.
 El desarrollo fue realizado pensado para el ecosistma Apple, así que se garantiza que la aplicación funcionará ejecutandose solamente en plataformas IOS.
 Los datos mostrados en la aplicación son extraidos de una API desarrollada especialmente para la prueba.
-[Repositorio de API](https://www.google.com)
+[Repositorio de API](https://github.com/DavidPadilla12/CityExplorer_API.git)
 
-Mediante el siguiente link podrá ver un video de la navegación de la aplicación [Video](https://www.google.com)
+Mediante el siguiente link podrá ver un video de la navegación de la aplicación [Video](https://www.youtube.com/watch?v=pK85pcfvcjs&feature=youtu.be)
 
 # Requisitos
 
