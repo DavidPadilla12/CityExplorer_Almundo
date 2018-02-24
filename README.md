@@ -1,7 +1,7 @@
 # City Explorer
 
 Proyecto en React native creado como prueba técnica para la empresa Almundo.
-El desarrollo fue realizado pensado para el ecosistma Apple, así que se garantiza que la aplicación funcionará ejecutandose solamente en plataformas IOS.
+El desarrollo fue realizado pensado para el ecosistema Apple, así que se garantiza que la aplicación funcionará ejecutandose solamente en plataformas IOS.
 Los datos mostrados en la aplicación son extraidos de una API desarrollada especialmente para la prueba.
 [Repositorio de API](https://github.com/DavidPadilla12/CityExplorer_API.git)
 
