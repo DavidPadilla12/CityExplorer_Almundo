@@ -1,7 +1,14 @@
+/**
+ * @author: Jesus David Padilla
+ * @description: Vista principal de la aplicación.
+ * Se encarga de realizar la consulta a la Api que contiene los datos de las ciudades que se mostrarán
+ * Crea y muestra el componente ListCities con la información por cada ciudad.
+ */
+
 import React, {Component} from 'react';
-import {StyleSheet, Text, Image, View, ActivityIndicator} from 'react-native';
+import {StyleSheet, View, ActivityIndicator} from 'react-native';
 import ListCities from '../components/list-cities';
-import {getCities} from '../api-data';
+import {getCities} from '../conections/api-data';
 
 class Home extends Component {
 
@@ -15,13 +22,19 @@ class Home extends Component {
 
   render() {
     return (
-      <View>
-        {!this.state.cities && <ActivityIndicator size="large"/>}
+      <View style={styles.loading}>
+        {!this.state.cities && <ActivityIndicator size="large" color="#c3c3c3"/>}
         {this.state.cities && <ListCities cities={this.state.cities}/>}
       </View>
-
     );
   }
 }
+const styles = StyleSheet.create({
+  loading: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+})
 
 export default Home;

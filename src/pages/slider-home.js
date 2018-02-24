@@ -1,3 +1,10 @@
+/**
+ * @author: Jesus David Padilla
+ * @description: Vista inicial de la aplicación.
+ * Se muestra un slider (react-native-swiper) con 3 views en donde la última posee un botón para redirigir al home
+ * de la aplicación.
+ */
+
 import React, {Component} from 'react';
 import {StyleSheet, Text, Image, View, TouchableOpacity} from 'react-native';
 import Swiper from 'react-native-swiper';
@@ -6,23 +13,31 @@ import {Actions} from 'react-native-router-flux';
 class SliderHome extends Component {
     render() {
         return (
-            <Swiper>
-                <View style={styles.slide_1}>
-                    <Image style={styles.img} source={require('../assets/images/Slide.png')}/>
+            <Swiper loop={false} activeDotColor={'#E53D30'}>
+                <View style={[styles.slide, styles.slide_1]}>
+                    <Image
+                        style={styles.img}
+                        source={require('../assets/images/Slide.png')}
+                        alt="Imagen CityExplorer"/>
                     <Text style={styles.tittle}>City Explorer</Text>
                     <Text style={styles.body}>¡Aquí podrás conocer algunos datos básicos de ciudades!</Text>
                 </View>
-                <View style={styles.slide_2}>
-                    <Image style={styles.img} source={require('../assets/images/Slide2.png')}/>
+                <View style={[styles.slide, styles.slide_2]}>
+                    <Image
+                        style={styles.img}
+                        source={require('../assets/images/Slide2.png')}
+                        alt="Imagen punto de interés"/>
                     <Text style={styles.tittle}>Puntos de interés</Text>
                     <Text style={styles.body}>Los rincones infaltables por conocer...</Text>
                 </View>
-                <View style={styles.slide_3}>
+                <View style={[styles.slide, styles.slide_3]}>
                     <Image
                         style={styles.img}
-                        source={require('../assets/images/DavidPadilla.jpg')}/>
+                        source={require('../assets/images/Slide3.png')}
+                        alt="Imagen logotipo Almundo"/>
                     <Text style={styles.tittle}>Demostración</Text>
-                    <Text style={styles.body}>Y la propuesta de David Padilla para la prueba de semillero Almundo - Medellín.</Text>
+                    <Text style={styles.body}>Una prueba para Almundo - Medellín</Text>
+                    <Text style={styles.body}>Realizada por Jesús David Padilla</Text>
                     <TouchableOpacity style={styles.button} onPress={() => Actions.home()}>
                         <Text style={styles.textButton}>
                             ¡Empezar!
@@ -35,26 +50,20 @@ class SliderHome extends Component {
 }
 
 const styles = StyleSheet.create({
-    slide_1: {
+    slide: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#61B5B1',
         paddingHorizontal: 30
+    },
+    slide_1: {
+        backgroundColor: '#61B5B1'
     },
     slide_2: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#A6BA35',
-        paddingHorizontal: 30
+        backgroundColor: '#A6BA35'
     },
     slide_3: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F7931E',
-        paddingHorizontal: 30
+        backgroundColor: '#ff9800'
     },
     img: {
         borderRadius: 125,
@@ -73,7 +82,7 @@ const styles = StyleSheet.create({
     },
     button: {
         marginTop: 40,
-        paddingVertical : 15,
+        paddingVertical: 15,
         width: '100%',
         borderRadius: 5,
         backgroundColor: '#C66106',
