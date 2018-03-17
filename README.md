@@ -5,7 +5,7 @@ El desarrollo fue realizado pensado para el ecosistema Apple, así que se garant
 Los datos mostrados en la aplicación son extraidos de una API desarrollada especialmente para la prueba.
 [Repositorio de API](https://github.com/DavidPadilla12/CityExplorer_API.git)
 
-Mediante el siguiente link podrá ver un video de la navegación de la aplicación [Video](https://www.youtube.com/watch?v=pK85pcfvcjs&feature=youtu.be)
+Mediante el siguiente link podrá ver un video de la navegación de la aplicación [Video](https://www.youtube.com/watch?v=jxwCojAkuUc&feature=youtu.be)
 
 # Requisitos
 
