@@ -43,5 +43,7 @@ Para ejecutar la aplicación puede abrir el proyecto de Xcode y ejecutar el emul
 # Autor
 
 Jesús David Padilla Cabrera
+Jose Carvajal
+Yordi Mosquera
 
 
